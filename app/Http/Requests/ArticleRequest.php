@@ -25,7 +25,7 @@ class ArticleRequest extends FormRequest
             "title"=>"required|string|max:255",
             "content"=>"required|string|max:255",
             "author"=>"required|string|max:100",
-            "image"=>"required|image|mimes:jpg,jpeg,png|max:4096",
+            "image"=>"required|image|mimes:jpg,jpeg,png|max:8192",
         ];
     }
     public function messages()
@@ -36,7 +36,7 @@ class ArticleRequest extends FormRequest
             "author.required"=>"Questo è un campo obbligatorio",
             "image.required"=>"Un articolo fornito di immagina risulterà più visibile",
             "image.mimes"=>"Formati ammessi: jpg, jpeg, png",
-            "image.max"=>"L'immagine è troppo grande,Max 4 Mb",
+            "image.max"=>"L'immagine è troppo grande,Max 8 Mb",
         ];
     }
 }
