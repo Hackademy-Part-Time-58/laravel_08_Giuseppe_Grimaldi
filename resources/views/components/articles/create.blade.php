@@ -1,5 +1,6 @@
 <x-main-layout>
     <x-slot:pageTitle>Pubblica Articolo</x-slot:pageTitle>
+    <x-section-title title="Pubblica Articolo"/>
     <x-centered-container>
         <div class="row justify-content-center">
    <form class="col-md-6" action="{{route('articles.store')}}" method="POST" enctype="multipart/form-data">

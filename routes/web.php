@@ -13,3 +13,8 @@ Route::get('/Articles',[ArticlesController::class,'index'])->name('articles.inde
 Route::get('/Articles/{id}',[ArticlesController::class,'show'])->name('detail.article');
 Route::get('Create-Article',[ArticlesController::class,'create'])->name('articles.create');
 Route::post('Create-Article',[ArticlesController::class,'store'])->name('articles.store');
+
+Route::middleware(['auth'])->group(function(){
+Route::get('Create-Article',[ArticlesController::class,'create'])->name('articles.create');
+Route::post('Create-Article',[ArticlesController::class,'store'])->name('articles.store');
+});
