@@ -8,6 +8,7 @@
             @empty
             <p class="text-center">Non ci sono articoli da mostrare</p>
             @endforelse
+            {{ $articles->links() }}
         </div>
         <div class="row justify-content-center py-5">
             <div class="col-md-2">

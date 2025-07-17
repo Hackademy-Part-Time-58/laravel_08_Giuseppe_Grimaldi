@@ -27,7 +27,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Profilo</a></li>
-            <li><a class="dropdown-item" href="#">I miei annunci</a></li>
+            <li><a class="dropdown-item" href="{{route('dashboard')}}">I miei annunci</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
